@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import GeneralPage from'./GeneralPage';
 import BootcampPage from'./BootcampPage';
+import TeamPage from'./TeamPage';
+import StudentsPage from'./StudentsPage';
 import { Route, Link } from 'react-router-dom';
 
 const selectOptions = [
@@ -65,12 +67,14 @@ class App extends Component {
           <Link to='/exit'>Sair</Link>
           <Link to='*'></Link>
         </nav>
-        <Route path='/' exact render={() => 'Home'}/>
+        <Route path='/' exact render={
+          () => <img src='https://ucarecdn.com/c9de877a-a518-4d5c-959f-f2e12fce9fb1/'/>
+        }/>
         <Route path='/general' render={() => <GeneralPage sede={this.state.selectValue}/>}/>
-        <Route path='/students' render={() => 'students'}/>
+        <Route path='/students' render={() => <StudentsPage sede={this.state.selectValue}/>}/>
         <Route path='/bootcamp' render={() => <BootcampPage sede={this.state.selectValue}/>}/>
-        <Route path='/team' render={() => 'team'}/>
-        <Route path='/exit' render={() => 'exit'}/>
+        <Route path='/team' render={() => <TeamPage sede={this.state.selectValue}/>}/>
+        <Route path='/exit' render={() => <h1 class='outputElement'>Nos vemos na próxima :)</h1>}/>
       </div>
     );
   }
