@@ -51,30 +51,32 @@ class App extends Component {
 
   render() {
     return (
-      // <div>oi</div>
       <div>
-        <nav>
-          <Dropdown dropdownChange={this.handleSelectChange} 
-            dropdownValue={this.state.selectValue}
-            defaultValue={"Selecione a sede"}
-            options={selectOptions}
-          />
-          <Link to='/'>Home</Link>
-          <Link to='/general'>Geral</Link>
-          <Link to='/students'>Estudantes</Link>
-          <Link to='/bootcamp'>Bootcamp</Link>
-          <Link to='/team'>Equipe</Link>
-          <Link to='/exit'>Sair</Link>
-          <Link to='*'></Link>
-        </nav>
-        <Route path='/' exact render={
-          () => <img src='https://ucarecdn.com/c9de877a-a518-4d5c-959f-f2e12fce9fb1/'/>
-        }/>
-        <Route path='/general' render={() => <GeneralPage sede={this.state.selectValue}/>}/>
-        <Route path='/students' render={() => <StudentsPage sede={this.state.selectValue}/>}/>
-        <Route path='/bootcamp' render={() => <BootcampPage sede={this.state.selectValue}/>}/>
-        <Route path='/team' render={() => <TeamPage sede={this.state.selectValue}/>}/>
-        <Route path='/exit' render={() => <h1 class='outputElement'>Nos vemos na próxima :)</h1>}/>
+        <Link to='/' className='header'> <a class = 'title' href="#"><h1>Lab</h1></a> </Link>
+        <div id='nav-bar'>
+          <nav>
+            <Dropdown dropdownChange={this.handleSelectChange} 
+              dropdownValue={this.state.selectValue}
+              defaultValue={"Selecione a sede"}
+              options={selectOptions}
+            />
+
+            <Link to='/general' className='link'>Geral </Link>
+            <Link to='/students' className='link'>Estudantes </Link>
+            <Link to='/bootcamp' className='link'>Bootcamp </Link>
+            <Link to='/team' className='link'>Equipe </Link>
+            <Link to='/exit' className='link'>Sair </Link>
+            <Link to='*'></Link>
+          </nav>
+          <Route path='/' exact render={
+            () => <img src='https://ucarecdn.com/c9de877a-a518-4d5c-959f-f2e12fce9fb1/'/>
+          }/>
+          <Route path='/general' render={() => <GeneralPage sede={this.state.selectValue}/>}/>
+          <Route path='/students' render={() => <StudentsPage sede={this.state.selectValue}/>}/>
+          <Route path='/bootcamp' render={() => <BootcampPage sede={this.state.selectValue}/>}/>
+          <Route path='/team' render={() => <TeamPage sede={this.state.selectValue}/>}/>
+          <Route path='/exit' render={() => <h1 class='outputElement'>Nos vemos na próxima :)</h1>}/>
+        </div>
       </div>
     );
   }
