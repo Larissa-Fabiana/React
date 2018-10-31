@@ -1,6 +1,6 @@
 import React from 'react';
-import './index.css';
-import data from'./data.js';
+import '../index.css';
+import data from'../data.js';
 
 function StudentsPage(props){ //função de página
   return(

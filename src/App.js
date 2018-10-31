@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import GeneralPage from'./GeneralPage';
-import BootcampPage from'./BootcampPage';
-import TeamPage from'./TeamPage';
-import StudentsPage from'./StudentsPage';
+import GeneralPage from'./components/GeneralPage';
+import BootcampPage from'./components/BootcampPage';
+import TeamPage from'./components/TeamPage';
+import StudentsPage from'./components/StudentsPage';
+
 import { Route, Link } from 'react-router-dom';
 
 const selectOptions = [
@@ -69,7 +70,9 @@ class App extends Component {
             <Link to='*'></Link>
           </nav>
           <Route path='/' exact render={
-            () => <img src='https://ucarecdn.com/c9de877a-a518-4d5c-959f-f2e12fce9fb1/'/>
+            () => <div className='image'>
+              <img src='https://ucarecdn.com/c9de877a-a518-4d5c-959f-f2e12fce9fb1/'/>
+            </div>
           }/>
           <Route path='/general' render={() => <GeneralPage sede={this.state.selectValue}/>}/>
           <Route path='/students' render={() => <StudentsPage sede={this.state.selectValue}/>}/>

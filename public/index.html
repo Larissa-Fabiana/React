@@ -9,6 +9,19 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
     <link rel="stylesheet" href="App.css">
     <title>React App</title>
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDL311Z7q6tTC4pu4V3rLaeSB9oNFB-ZgI",
+        authDomain: "react-server-lab.firebaseapp.com",
+        databaseURL: "https://react-server-lab.firebaseio.com",
+        projectId: "react-server-lab",
+        storageBucket: "react-server-lab.appspot.com",
+        messagingSenderId: "692381975015"
+      };
+      firebase.initializeApp(config);
+    </script>
   </head>
   <body>
     <noscript>

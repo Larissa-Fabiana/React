@@ -1,0 +1,114 @@
+[debug] [2018-10-31T18:51:16.184Z] ----------------------------------------------------------------------
+[debug] [2018-10-31T18:51:16.187Z] Command:       /usr/bin/node /usr/bin/firebase init hosting
+[debug] [2018-10-31T18:51:16.187Z] CLI Version:   6.0.0
+[debug] [2018-10-31T18:51:16.187Z] Platform:      linux
+[debug] [2018-10-31T18:51:16.187Z] Node Version:  v8.11.2
+[debug] [2018-10-31T18:51:16.187Z] Time:          Wed Oct 31 2018 16:51:16 GMT-0200 (BRST)
+[debug] [2018-10-31T18:51:16.187Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-31T18:51:16.197Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-31T18:51:16.198Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/laboratoria/Área de Trabalho/sprint-extra/tentando-entender-react/trying-react
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-10-31T18:51:16.204Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?page_size=100  
+ 
+[debug] [2018-10-31T18:51:16.248Z] Error: unable to get local issuer certificate
+    at TLSSocket.<anonymous> (_tls_wrap.js:1105:38)
+    at emitNone (events.js:106:13)
+    at TLSSocket.emit (events.js:208:7)
+    at TLSSocket._finishInit (_tls_wrap.js:639:8)
+    at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:469:38)
+[error] 
+[error] Error: Server Error. unable to get local issuer certificate
+[debug] [2018-10-31T18:53:00.507Z] ----------------------------------------------------------------------
+[debug] [2018-10-31T18:53:00.509Z] Command:       /usr/bin/node /usr/bin/firebase init
+[debug] [2018-10-31T18:53:00.510Z] CLI Version:   6.0.0
+[debug] [2018-10-31T18:53:00.510Z] Platform:      linux
+[debug] [2018-10-31T18:53:00.510Z] Node Version:  v8.11.2
+[debug] [2018-10-31T18:53:00.510Z] Time:          Wed Oct 31 2018 16:53:00 GMT-0200 (BRST)
+[debug] [2018-10-31T18:53:00.510Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-31T18:53:00.520Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-31T18:53:00.520Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/laboratoria/Área de Trabalho/sprint-extra/tentando-entender-react/trying-react
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-10-31T18:53:04.452Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?page_size=100  
+ 
+[debug] [2018-10-31T18:53:04.480Z] Error: unable to get local issuer certificate
+    at TLSSocket.<anonymous> (_tls_wrap.js:1105:38)
+    at emitNone (events.js:106:13)
+    at TLSSocket.emit (events.js:208:7)
+    at TLSSocket._finishInit (_tls_wrap.js:639:8)
+    at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:469:38)
+[error] 
+[error] Error: Server Error. unable to get local issuer certificate
+[debug] [2018-10-31T18:55:15.229Z] ----------------------------------------------------------------------
+[debug] [2018-10-31T18:55:15.231Z] Command:       /usr/bin/node /usr/bin/firebase init
+[debug] [2018-10-31T18:55:15.231Z] CLI Version:   6.0.0
+[debug] [2018-10-31T18:55:15.232Z] Platform:      linux
+[debug] [2018-10-31T18:55:15.232Z] Node Version:  v8.11.2
+[debug] [2018-10-31T18:55:15.232Z] Time:          Wed Oct 31 2018 16:55:15 GMT-0200 (BRST)
+[debug] [2018-10-31T18:55:15.232Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-31T18:55:15.238Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-31T18:55:15.238Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/laboratoria/Área de Trabalho/sprint-extra/tentando-entender-react/trying-react
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-10-31T18:55:18.523Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?page_size=100  
+ 
+[debug] [2018-10-31T18:55:18.586Z] Error: unable to get local issuer certificate
+    at TLSSocket.<anonymous> (_tls_wrap.js:1105:38)
+    at emitNone (events.js:106:13)
+    at TLSSocket.emit (events.js:208:7)
+    at TLSSocket._finishInit (_tls_wrap.js:639:8)
+    at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:469:38)
+[error] 
+[error] Error: Server Error. unable to get local issuer certificate

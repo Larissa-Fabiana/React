@@ -67,5 +67,11 @@ nav{
   font-weight: bold;
   /* text-decoration: none; */
   color: black;
-
 } 
+.image{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}

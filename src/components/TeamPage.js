@@ -1,6 +1,6 @@
 import React from 'react';
-import './index.css';
-import data from'./data.js';
+import '../index.css';
+import data from'../data.js';
 
 function TeamPage(props) { //função de página
   return(
@@ -14,20 +14,25 @@ function TeamPage(props) { //função de página
 function Teachers(props){ //notas de professores e jedis
   let renderDaEquipe = [];
   if(props.sede) {
-    var arraySprints = [];
+    let arraySprints = [];
+          let resultFinalT = '';
+      let resultFinalJ = '';
     for (let turma in data[props.sede]) {
-      var resultTeacher = [];
-      var resultJedi = [];
-      var resultFinalT = '';
-      var resultFinalJ = '';
+      let resultTeacher = [];
+      let resultJedi = [];
       for (let rating in data[props.sede][turma]['ratings']){
         arraySprints.push(rating);
         resultTeacher.push(data[props.sede][turma]['ratings'][rating]['teacher']);  
         resultJedi.push(data[props.sede][turma]['ratings'][rating]['jedi']);     
       }
-      resultFinalT = resultTechAndHse(resultTeacher)
-      resultFinalJ = resultTechAndHse(resultJedi)
+    
+    resultFinalT = resultTechAndHse(resultTeacher)
+    resultFinalJ = resultTechAndHse(resultJedi)
+    console.log(resultFinalT)
+    console.log(resultFinalJ)
     }
+    const reduce = resultFinalT.reduce((acum, num) => acum + num);
+    console.log(reduce)
 
     renderDaEquipe.push(
       <div className='periodElement' key={'equipe'}>
@@ -35,15 +40,16 @@ function Teachers(props){ //notas de professores e jedis
         <div className='jediElement'>A média dos Jedi Masters é  {resultFinalJ.toFixed(2)}</div>
       </div>
     );
+  
   }
   return renderDaEquipe;
 }
 
 function resultTechAndHse(total){
-  var hability = 0;
-  var result = 0;
-  for(var i=0; i < total.length; i++ ){
-    hability += total[i];
+  let hability = 0;
+  let result = 0;
+  for(let one of total){
+    hability += one;
     result = hability / total.length;
   }
   return(result);
