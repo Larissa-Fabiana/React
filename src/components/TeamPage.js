@@ -31,8 +31,6 @@ function Teachers(props){ //notas de professores e jedis
     console.log(resultFinalT)
     console.log(resultFinalJ)
     }
-    const reduce = resultFinalT.reduce((acum, num) => acum + num);
-    console.log(reduce)
 
     renderDaEquipe.push(
       <div className='periodElement' key={'equipe'}>

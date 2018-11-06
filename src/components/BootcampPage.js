@@ -6,7 +6,7 @@ function BootcampPage (props){ //função de página
   return(
     <div>
       <AverageNps sede={props.sede} />
-      <BestGrades sede={props.sede} />
+      {/* <BestGrades sede={props.sede} /> */}
     </div>
   )
 }
@@ -55,3 +55,4 @@ function resultTechAndHse(total){
   return(result);
 }
 
+export default BootcampPage;
