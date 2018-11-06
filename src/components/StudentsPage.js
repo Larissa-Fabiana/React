@@ -28,7 +28,7 @@ function StudentList(props){ //lista de estudantes
       }
 
       Students.push(
-        <div className='studentElement' key={turma}>
+        <div className='studentElement container-margin' key={turma}>
           {turma}
           <div className='active'>
             {active}

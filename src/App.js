@@ -78,7 +78,7 @@ class App extends Component {
           <Route path='/students' render={() => <StudentsPage sede={this.state.selectValue}/>}/>
           <Route path='/bootcamp' render={() => <BootcampPage sede={this.state.selectValue}/>}/>
           <Route path='/team' render={() => <TeamPage sede={this.state.selectValue}/>}/>
-          <Route path='/exit' render={() => <h1 class='outputElement'>Nos vemos na próxima :)</h1>}/>
+          <Route path='/exit' render={() => <h1 class='outputElement container-margin'>Nos vemos na próxima :)</h1>}/>
         </div>
       </div>
     );

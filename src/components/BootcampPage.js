@@ -32,7 +32,7 @@ function AverageNps(props){ //NPS
       var resultFinal = resultTechAndHse(result)
 
       AverageNpsDaTurma.push(
-        <div className='averageNpsElement' key={turma}>
+        <div className='averageNpsElement container-margin' key={turma}>
           {turma}
           <div className='sumSprintsElement'>O número de sprints é de: {result.length} sprints</div>
           <div className='npsElement'>A média do NPS dos sprints foi de {parseFloat(resultFinal.toFixed(2))} %

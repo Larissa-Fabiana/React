@@ -33,7 +33,7 @@ function Teachers(props){ //notas de professores e jedis
     }
 
     renderDaEquipe.push(
-      <div className='periodElement' key={'equipe'}>
+      <div className='periodElement container-margin' key={'equipe'}>
         <div className='teachersElement'>A média dos mentores é {resultFinalT.toFixed(2)}</div>
         <div className='jediElement'>A média dos Jedi Masters é  {resultFinalJ.toFixed(2)}</div>
       </div>
@@ -70,7 +70,7 @@ function Satisfaction(props){ //satisfação média por sede
       let resultFinal = resultTechAndHse(result)
 
       satisfaçãoDaTurma.push(
-        <div className='satisfactionElement' key={turma}>
+        <div className='satisfactionElement container-margin' key={turma}>
           {turma}
           <div class='expectationElement'>
             Alunas satisfeitas com a experiência  na Laboratoria: {resultFinal.toFixed(2)} %

@@ -36,7 +36,7 @@ function DadosDaTurma(props) {
       });
 
       renderDosDadosDaTurma.push(
-        <div className='periodElement' key={turma}>
+        <div className='periodElement container-margin' key={turma}>
           {turma}
           <div className='sumStudentsElement'>total de alunas: {sum} alunas</div>
           <div className='dropoutsElement'>desistências: {resultFinal.toFixed(2) + '%'}</div>
@@ -73,7 +73,7 @@ function Grades(props) {  //function para notas tech e hse totais
     }
 
     renderDasNotasDaTurma.push(
-      <div className='container-Element' key={'Grades'}>
+      <div className='container-Element container-margin' key={'Grades'}>
         <div className='techElement'>A média de notas tech no Bootcamp é: {resultTech}</div>
         <div className='hseElement'>A média de notas HSE no Bootcamp é: {resultHSE}</div>
       </div>
